@@ -10,16 +10,6 @@ for line in input_file:
     eq = line[0]
     keggeq = line[1]
     eq = eq.replace("[c] : ", "")
-    #keggeq = keggeq.replace("+ ", "")
-    #keggeq = keggeq.replace("<=> ", "")
-    #eq = eq.replace(" 2 ", " ")
-    #eq = eq.replace(" 3 ", " ")
-    #eq = eq.replace(" 4 ", " ")
-    #eq = eq.replace(" 5 ", " ")
-    #eq = eq.replace(" 6 ", " ")
-    #eq = eq.replace(" 7 ", " ")
-    #eq = eq.replace(" 8 ", " ")
-    #eq = eq.replace(" 9 ", " ")
     if eq.startswith("[c]"):
         eq = eq.replace("[c]:", "")
         eq = eq.replace("+", " + ")
@@ -33,6 +23,3 @@ for line in input_file:
         else:
             print eqDif
             outfile.write(eqDif + '\n')
-#    for keggDif in kegg_split:
-#        if keggDif.startswith("C") or keggDif.startswith("G"):
-#            outfile.write(keggDif + '\n')
