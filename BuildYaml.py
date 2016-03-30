@@ -18,7 +18,6 @@ for line in equations:
     line = line.split('\t')
     eq = line[0]
     keggEq = line[1]
-#    print eq
     EqDict[keggEq] = eq
 
 gene_list = open("Gene_List.txt", 'w')
@@ -92,36 +91,3 @@ for row in InitFile:
         yamlout.write("     keggEqCodes: " + "\".\"" + "\n")
         yamlout.write("     genes: \"" + "." + "\"" + "\n")
         i += 1
-            
-#    if gpr in gprList and rxnID[:2] != "R_":
-#        yamlout.write("- model: eco.ECOReaction" + "\n")
-#        yamlout.write("  pk: " + str(i) + "\n")
-#        yamlout.write("  fields:" + "\n")
-#        yamlout.write("     rxnID: " + rxnID + "\n")
-#        yamlout.write("     name: \"" + Name + "\"" + "\n")
-#        yamlout.write("     ec: " + EC + "\n")
-#        yamlout.write("     subsystem: \"" + Subsystem + "\"" + "\n")
-#        yamlout.write("     equation: \"" + Equations + "\"" + "\n")
-#        yamlout.write("     gpr: \"" + gpr + "\"" + "\n")
-#        yamlout.write("     keggEq: " + KeggEq + "\n")
-#        yamlout.write("     keggEqCodes: " + KeggEqCodes + "\n")
-        #yamlout.write("     score: " + str(Score) + "\n")                                                                                                       
-#        yamlout.write("     genes: \"" + gene + "\"" + "\n")
-#        rxnID = "R_" + rxnID
-#        i += 1
-#    if gene in geneList and rxnID[:2] != "R_":
-#        yamlout.write("- model: eco.ECOReaction" + "\n")
-#        yamlout.write("  pk: " + str(i) + "\n")
-#        yamlout.write("  fields:" + "\n")
-#        yamlout.write("     rxnID: " + rxnID + "\n")
-#        yamlout.write("     name: \"" + Name + "\"" + "\n")
-#        yamlout.write("     ec: " + EC + "\n")
-#        yamlout.write("     subsystem: \"" + Subsystem + "\"" + "\n")
-#        yamlout.write("     equation: \"" + Equations + "\"" + "\n")
-#        yamlout.write("     gpr: \"" + gpr + "\"" + "\n")
-#        yamlout.write("     keggEq: " + KeggEq + "\n")
-#        yamlout.write("     keggEqCodes: " + KeggEqCodes + "\n")
-        #yamlout.write("     score: " + str(Score) + "\n")                                                                                                       
-#        yamlout.write("     genes: \"" + gene + "\"" + "\n")
-#        rxnID = "R_" + rxnID
-#        i += 1
